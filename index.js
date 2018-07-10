@@ -1,10 +1,10 @@
 var katzDeli = [];
 
 //A new customer uses this function when coming into the Deli to take a number for the line. I used the .push method to add them to the end, and I am a big fan of using the ${} to reuse variables. i is delcared so that we can show the length of the line is the original array +1.
-function takeANumber(katzDeliLine, number){
+function takeANumber(katzDeliLine, name){
   var i = katzDeliLine.length;
-  katzDeliLine.push(number);
-  return `Welcome, ${number}. You are number ${i+1} in line.`
+  katzDeliLine.push(name);
+  return `Welcome, ${name}. You are number ${i+1} in line.`
   
 }
 
@@ -19,6 +19,8 @@ function nowServing(katzDeliLine){
   
 }
 
+function giveNumberTicket(katzDeliLine)
+ newTicket = katzDeliLine += 1
 
 
 
