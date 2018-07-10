@@ -1,10 +1,10 @@
 var katzDeli = [];
 
 //A new customer uses this function when coming into the Deli to take a number for the line. I used the .push method to add them to the end, and I am a big fan of using the ${} to reuse variables. i is delcared so that we can show the length of the line is the original array +1.
-function takeANumber(katzDeliLine, name){
+function takeANumber(katzDeliLine, number){
   var i = katzDeliLine.length;
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${i+1} in line.`
+  katzDeliLine.push(number);
+  return `Welcome, ${number}. You are number ${i+1} in line.`
   
 }
 
@@ -18,6 +18,10 @@ function nowServing(katzDeliLine){
  }
   
 }
+
+
+
+
 
 
 //This one also took some playing around with so that I could get the code to say "the line is currently empty" when the array was empty. To do this I used the === undefined to make sure there was nothing indexed in the array. I'm sure there are much simpler ways to write this function but it made the most sense to me. Probably I wasn't supposed to write the order numbers as strings, and it would have been more efficient to use i in the return code rather than typing out 0-2, but it passed :).
